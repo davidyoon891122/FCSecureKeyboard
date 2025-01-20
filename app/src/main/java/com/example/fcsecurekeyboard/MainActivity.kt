@@ -1,5 +1,6 @@
 package com.example.fcsecurekeyboard
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun openShuffle() {
-
+        startActivity(Intent(this, PinActivity::class.java))
     }
 
     fun openVerifyOtp() {
